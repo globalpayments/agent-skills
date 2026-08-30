@@ -1,15 +1,16 @@
 # Global Payments Agent Skills
 
-Agent skills for integrating the Global Payments SDKs — .NET, Java, Node.js,
-PHP, Python, Go, iOS and Android — packaged as one installable plugin.
+Integration guidance and copy-ready examples for the Global Payments SDKs in
+.NET, Java, Node.js, PHP, Python, Go, iOS, and Android. The eight skills ship
+as one installable plugin.
 
 [![skills.sh](https://skills.sh/b/globalpayments-samples/agent-skills)](https://skills.sh/globalpayments-samples/agent-skills)
 
-Every skill is grounded in real SDK source: class names, method chains,
-configuration fields, and error trees are verified against the actual
-`globalpayments/*` repositories and their integration test suites, not
-summarized from marketing docs. Where an SDK genuinely lacks a feature (for
-example, GP Ecom has no connector in the Go SDK), the skill says so.
+Each skill records verified class names, method chains, configuration fields,
+and error trees. The material comes from SDK source, sample code, and
+integration tests where they are available. Unsupported paths are called out
+instead of guessed. The Go SDK skill, for example, notes that Go supports
+Portico and UPA, not GP API or GP Ecom.
 
 ## Skills
 
@@ -39,7 +40,7 @@ example, GP Ecom has no connector in the Go SDK), the skill says so.
 codex plugin marketplace add globalpayments-samples/agent-skills
 ```
 
-then run `/plugins` in the Codex CLI to install `gp-sdk-skills`.
+Then run `/plugins` in the Codex CLI to install `gp-sdk-skills`.
 
 ### Fallback — `npx skills`
 
@@ -51,18 +52,18 @@ npx skills add globalpayments-samples/agent-skills --skill gp-php-sdk
 
 ### Cursor, GitHub Copilot, VS Code, Kiro
 
-These editors consume the Agent Plugins 1.0 manifest at
-`plugins/gp-sdk-skills/plugin.json` directly.
+These editors read the Agent Plugins 1.0 manifest at
+`plugins/gp-sdk-skills/plugin.json`.
 
 ## Contributing
 
 - Run both validators before opening a PR:
   `python3 scripts/validate-packaging.py && python3 scripts/validate-sdk-skill.py --all`
-- Bump `version` in all three manifests together
-  (`plugins/gp-sdk-skills/plugin.json`, `.claude-plugin/plugin.json`,
-  `.codex-plugin/plugin.json`).
-- Companion docs live under each skill's `references/` directory; keep
-  `SKILL.md` under 1024 characters of frontmatter description.
+- Bump `version` in all three manifests together:
+  `plugins/gp-sdk-skills/plugin.json`, `.claude-plugin/plugin.json`, and
+  `.codex-plugin/plugin.json`.
+- Keep companion docs under each skill's `references/` directory.
+- Keep each `SKILL.md` frontmatter description within the 1024-character cap.
 
 ## License
 
