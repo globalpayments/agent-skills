@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gp-sdk-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for integrating the Global Payments SDKs across .NET, Java, Node.js, PHP, Python, Go, iOS and Android. Grounded in real SDK source.",
+  "author": { "name": "Global Payments", "url": "https://developer.globalpay.com" },
+  "homepage": "https://github.com/globalpayments-samples/agent-skills",
+  "repository": "https://github.com/globalpayments-samples/agent-skills",
+  "license": "MIT",
+  "keywords": ["global-payments", "payments", "sdk", "gp-api", "portico", "gp-ecom", "3ds"]
+}

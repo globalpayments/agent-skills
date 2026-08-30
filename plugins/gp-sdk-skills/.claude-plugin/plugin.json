@@ -1,0 +1,7 @@
+{
+  "name": "gp-sdk-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for integrating the Global Payments SDKs across eight languages.",
+  "author": { "name": "Global Payments", "url": "https://developer.globalpay.com" },
+  "license": "MIT"
+}

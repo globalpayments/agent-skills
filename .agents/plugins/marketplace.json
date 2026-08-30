@@ -1,0 +1,12 @@
+{
+  "name": "globalpayments",
+  "plugins": [
+    {
+      "name": "gp-sdk-skills",
+      "source": { "source": "local", "path": "./plugins/gp-sdk-skills" },
+      "interface": { "displayName": "Global Payments SDK Skills" },
+      "policy": { "installation": "AVAILABLE" },
+      "category": "Development"
+    }
+  ]
+}

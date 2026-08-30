@@ -1,0 +1,6 @@
+{
+  "name": "gp-sdk-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for integrating the Global Payments SDKs across eight languages.",
+  "skills": "./skills/"
+}

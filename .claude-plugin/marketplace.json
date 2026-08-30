@@ -1,0 +1,20 @@
+{
+  "name": "globalpayments",
+  "owner": {
+    "name": "Global Payments",
+    "url": "https://github.com/globalpayments-samples"
+  },
+  "description": "Agent skills for Global Payments SDKs and integrations.",
+  "plugins": [
+    {
+      "name": "gp-sdk-skills",
+      "source": "./plugins/gp-sdk-skills",
+      "description": "SDK integration skills for .NET, Java, Node.js, PHP, Python, Go, iOS and Android.",
+      "version": "1.0.0",
+      "author": { "name": "Global Payments" },
+      "license": "MIT",
+      "category": "Development",
+      "tags": ["payments", "sdk", "integration"]
+    }
+  ]
+}
