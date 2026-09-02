@@ -4,7 +4,7 @@ Integration guidance and copy-ready examples for the Global Payments SDKs in
 .NET, Java, Node.js, PHP, Python, Go, iOS, and Android. The eight skills ship
 as one installable plugin.
 
-[![skills.sh](https://skills.sh/b/globalpayments-samples/agent-skills)](https://skills.sh/globalpayments-samples/agent-skills)
+[![skills.sh](https://skills.sh/b/globalpayments/agent-skills)](https://skills.sh/globalpayments/agent-skills)
 
 Each skill records verified class names, method chains, configuration fields,
 and error trees. The material comes from SDK source, sample code, and
@@ -30,30 +30,30 @@ Portico and UPA, not GP API or GP Ecom.
 ### Claude Code
 
 ```
-/plugin marketplace add globalpayments-samples/agent-skills
+/plugin marketplace add globalpayments/agent-skills
 /plugin install gp-sdk-skills@globalpayments
 ```
 
 ### Codex / ChatGPT
 
 ```
-codex plugin marketplace add globalpayments-samples/agent-skills
+codex plugin marketplace add globalpayments/agent-skills
 ```
 
 Then run `/plugins` in the Codex CLI to install `gp-sdk-skills`.
-
-### Fallback — `npx skills`
-
-```
-npx skills add globalpayments-samples/agent-skills --list
-npx skills add globalpayments-samples/agent-skills --all
-npx skills add globalpayments-samples/agent-skills --skill gp-php-sdk
-```
 
 ### Cursor, GitHub Copilot, VS Code, Kiro
 
 These editors read the Agent Plugins 1.0 manifest at
 `plugins/gp-sdk-skills/plugin.json`.
+
+### Others — `npx skills`
+
+```
+npx skills add globalpayments/agent-skills --list
+npx skills add globalpayments/agent-skills --all
+npx skills add globalpayments/agent-skills --skill gp-php-sdk
+```
 
 ## Contributing
 
